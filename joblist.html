@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./joblist.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="icon"
+    style="height: 10px; width: 10px; border-radius: 20px"
+    href="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg"
+  />
+</head>
+<body>
+    <header>
+        <h1 class="head" style="color: aliceblue; background-color: black; height: 70px;padding-left: 20px; padding: 20px;">Work Opportunities in Japan</h1>
+       
+       </header>
+    
+
+    <section id="job-listings">
+        <h2>Job Listings</h2>
+        <div class="search-bar" >
+              <input type="text" placeholder="Search job" id="search-input">
+         <button onclick="searchJobs()">Search</button>
+        </div>
+        <div id="job-listings-container">
+            <!-- Job listings will be dynamically added here -->
+        </div>
+    </section>
+
+ 
+
+
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add this modal element at the end of your body -->
+<div id="job-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" alt="image" style="height:500px; width: 500px;">
+        <h2 id="modal-title"></h2>
+        <p><strong>Location:</strong> <span id="modal-location"></span></p>
+        <p id="modal-description"></p>
+        <button onclick="openApplicationForm()" style="align-items: center;">Apply Now</button>
+    </div>
+</div>
+
+      
+     
+
+     <a href="./about.html">Want to know more about Japan</a>
+     <br>
+     <footer class="flex" style="justify-content: space-between; display: flex; align-items: center;">
+        <i class="fa-brands fa-twitter ">&nbsp;<span>Twitter.com</span> </i> 
+        <i class="fa-brands fa-facebook">&nbsp;<span>facebook.com</span></i>
+        <i class="fa-brands fa-instagram">&nbsp;<span>instagram.com</span></i>
+        <i class="fa-brands fa-whatsapp">&nbsp;<span>whatsapp.com</span></i>
+        <i class="fa-brands fa-linkedin">&nbsp;<span>linkedin.com</span></i>
+        <div> 
+          <p>&copy; 2024 Work Opportunities in Japan</p>
+        </div>
+      </footer>
+
+      <script src="./joblist.js"></script>
+</body>
+</html>

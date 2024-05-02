@@ -1,0 +1,73 @@
+  /* Apply styles to the body to ensure consistent spacing and font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form horizontally and provide some padding */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+     border: black 2px solid;
+     box-shadow: 6px 6px 6px black ;
+}
+ 
+
+/* Style form headings */
+h1 {
+    text-align: center;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style form inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Style file input */
+input[type="file"] {
+    margin-top: 5px; /* Adjust margin to match other inputs */
+}
+
+/* Style submit button */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Style form groups to provide visual separation */
+.form-group {
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  position: sticky;
+}

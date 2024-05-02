@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color:red;">Job Application Form</title>
+    <link rel="stylesheet" href="./Application.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="submit_application.php" method="POST"> <!-- Replace "submit_application.php" with the path to your form submission handler -->
+        <div class="form-group">
+            <label for="full-name">Full Name: <span style="color: red;">*</span></label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email: <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone: <span style="color: red;">*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="resume">Resume/CV: <span style="color: red;">*</span></label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div class="form-group">
+            <label for="cover-letter">Cover Letter:  <span style="color: red;">*</span></label>
+            <textarea id="cover-letter" name="cover-letter" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="5"></textarea>
+        </div>
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>

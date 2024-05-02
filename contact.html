@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send us a message</title>
+    <link rel="stylesheet" href="./Application.css">
+     
+</head>
+<body>
+    <h1>Contact</h1>
+    <form action="submit_application.php" method="POST"> <!-- Replace "submit_application.php" with the path to your form submission handler -->
+        <div class="form-group">
+            <label for="full-name">Full Name: <span style="color: red;">*</span></label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter Your Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email: <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone: <span style="color: red;">*</span></label>
+            <input type="tel" id="phone" name="phone"  placeholder="Enter phone number">
+        </div>
+        
+        <div class="form-group">
+            <label for="additional-info">Your Query</label>
+            <textarea id="additional-info" name="additional-info" rows="5"></textarea>
+        </div>
+        <button type="submit">Submit Application</button>
+    </form>
+    <footer class="flex" style="justify-content: space-between; display: flex; align-items: center;">
+        <i class="fa-brands fa-twitter ">&nbsp;<span>Twitter.com</span> </i> 
+  <i class="fa-brands fa-facebook">&nbsp;<span>facebook.com</span></i>
+  <i class="fa-brands fa-instagram">&nbsp;<span>instagram.com</span></i>
+  <i class="fa-brands fa-whatsapp">&nbsp;<span>whatsapp.com</span></i>
+  <i class="fa-brands fa-linkedin">&nbsp;<span>linkedin.com</span></i>
+  <div> 
+    <p>&copy; 2024 Work Opportunities in Japan</p>
+  </div> 
+    </footer>
+</body>
+</html>
